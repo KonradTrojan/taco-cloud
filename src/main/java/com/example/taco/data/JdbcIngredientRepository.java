@@ -1,7 +1,7 @@
 package com.example.taco.data;
 
 import com.example.taco.model.Ingredient;
-import com.example.taco.repository.IngredientRepository;
+import com.example.taco.repository.jdbc.IngredientRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;

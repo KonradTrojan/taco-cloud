@@ -2,7 +2,7 @@ package com.example.taco.data;
 
 import com.example.taco.model.Ingredient;
 import com.example.taco.model.Taco;
-import com.example.taco.repository.TacoRepository;
+import com.example.taco.repository.jdbc.TacoRepository;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.PreparedStatementCreator;
 import org.springframework.jdbc.core.PreparedStatementCreatorFactory;
@@ -10,13 +10,10 @@ import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
 import org.springframework.stereotype.Repository;
 
-import java.sql.Statement;
 import java.sql.Timestamp;
 import java.sql.Types;
-import java.time.LocalDateTime;
 import java.util.Arrays;
 import java.util.Date;
-import java.util.Objects;
 
 @Repository
 public class JdbcTacoRepository implements TacoRepository {

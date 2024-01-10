@@ -1,4 +1,4 @@
-package com.example.taco.repository;
+package com.example.taco.repository.jdbc;
 
 import com.example.taco.model.Taco;
 

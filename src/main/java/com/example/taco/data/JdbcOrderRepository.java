@@ -2,7 +2,7 @@ package com.example.taco.data;
 
 import com.example.taco.model.Order;
 import com.example.taco.model.Taco;
-import com.example.taco.repository.OrderRepository;
+import com.example.taco.repository.jdbc.OrderRepository;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;

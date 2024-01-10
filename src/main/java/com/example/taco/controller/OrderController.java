@@ -1,7 +1,7 @@
 package com.example.taco.controller;
 
 import com.example.taco.model.Order;
-import com.example.taco.repository.OrderRepository;
+import com.example.taco.repository.jdbc.OrderRepository;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
