@@ -19,7 +19,8 @@ import java.util.List;
 public class Order implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO, generator = "TACO_ORDER_SEQ")
+    @SequenceGenerator(name= "TACO_ORDER_SEQ", sequenceName = "TACO_ORDER_SEQ", initialValue=1, allocationSize = 1)
     private long id;
     private Date placedAt;
 
@@ -39,7 +40,7 @@ public class Order implements Serializable {
             message="Must be formatted MM/YY")
     private String ccExpiration;
     @Digits(integer=3, fraction=0, message="Invalid CVV")
-    private String ccCVV;
+    private String ccCvv;
 
     @ManyToMany(targetEntity = Taco.class)
     private List<Taco> tacos = new ArrayList<>();

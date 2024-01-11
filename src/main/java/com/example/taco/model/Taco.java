@@ -15,7 +15,8 @@ import lombok.Data;
 public class Taco {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO, generator = "TACO_SEQ")
+    @SequenceGenerator(name= "TACO_SEQ", sequenceName = "TACO_SEQ", initialValue=1, allocationSize = 1)
     private long id;
 
     private Date createdAt;
