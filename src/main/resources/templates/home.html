@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:th="http://www.thymeleaf.org">
+      xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
 <head>
     <title>Taco Cloud</title>
 </head>
@@ -8,5 +8,9 @@
 <body>
 <h1>Welcome to...</h1>
 <img th:src="@{/images/TacoCloud.png}"/>
+<a th:href="@{/design}" id="design"><button>Create the best taco!</button></a></br>
+<a th:href="@{/register}" id="register"><button>Register your account to create the best taco!</button></a>
+
+</form>
 </body>
 </html>
